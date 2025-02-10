@@ -95,6 +95,12 @@
   justify-content: center;
 }
 
+.mask{
+  position: absolute;
+  height: 0;
+  width: 0;
+}
+
 .cards_wrapper{
   width: 100%; 
   display: flex;
@@ -102,69 +108,23 @@
   flex-wrap: wrap;
 }
 
-#mask1{
-  clip-path: url('#svg');
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
+.card1 {
+  width: 100%; /* Para ocupar todo o espaço disponível */
+  max-width: 400px; /* Mantém proporção */
+  height: auto;
+  clip-path: url('#svg'); /* Aplica o clip-path */
 }
-
-/* .card1{
-  border-radius: 20px;
-  background-image: url('../src/assets/669aafac70016.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 400px;
-  height: 350px;
-  position: relative;
-} 
-
-
-
 .card2{
-  border-radius: 20px;
-  background-image: url('../src/assets/66992b5217ce3.webp');
-  background-size: cover;
-  background-position: center;
-  background-color: black;
-  background-repeat: no-repeat;
-  width: 400px;
-  height: 350px;
-  position: relative;
+  clip-path: url('#svg');
 }
 
 .card3{
-  border-radius: 20px;
-  background-image: url('../src/assets/6699657e592b8.webp');
-  background-color: black;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 400px;
-  height: 350px;
-  position: relative;
+  clip-path: url('#svg');
 }
 
 .card4{
-  border-radius: 20px;
-  background-image: url('../src/assets/66997118a23a0.webp');
-  background-size: cover;
-  background-color: rgb(0, 0, 0);
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 400px;
-  height: 350px;
-  position: relative;
+  clip-path: url('#svg');
 }
 
-.circle_btn{
-  width: 80px;
-  height: 80px;
-  background-color: rgb(44, 42, 39);
-  position: absolute;
-  bottom: 0;
-  right:0;
-  border-radius: 50%;
-  border: 14px solid #fff;
-} */
+
+
