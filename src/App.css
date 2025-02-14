@@ -365,6 +365,40 @@
   font-weight: 200;
 }
 
+.container_professional{
+  width: 100%;
+  background-color: #000;
+  padding: 20px;
+  overflow-x: hidden;
+}
+
+
+.professional {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 10s linear infinite;
+
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.professional img{  
+  border: 1px solid #ffc;
+  width: 400px;
+  height: 450px;
+  border-radius: 20px;
+  margin: 30px;
+}
+
+
+
 /*responsivo*/
 
 @media screen and (max-width: 1125px){
@@ -450,5 +484,17 @@
     font-size: 50px;
     margin: 0 2%;
     font-weight: 400;
+  }
+
+  .hero .text_brain h1{
+    font-size: 60px;
+  }
+
+  .professional img{  
+    border: 1px solid #ffc;
+    width: 300px;
+    height: 450px;
+    border-radius: 20px;
+    margin: 30px;
   }
 }

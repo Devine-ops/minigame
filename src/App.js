@@ -6,9 +6,13 @@ import card2 from "./assets/card2.webp";
 import card3 from "./assets/card3.webp";
 import card4 from "./assets/card4.webp";
 import brain from "./assets/brain.png";
+import doctor from "./assets/doctor.webp";
+import educatio from "./assets/educatio.webp";
+import psycho from "./assets/psycho.webp";
+import nuser from "./assets/nuser.webp";
+import advogado from "./assets/advogado.webp";
 
 function App() {
-
   const [count1, setCount1] = useState(0);
   const [count2, setCount2] = useState(0);
   const [count3, setCount3] = useState(0);
@@ -17,7 +21,7 @@ function App() {
     let i = 0;
     const interval = setInterval(() => {
       if (i < 30) {
-        setCount1(prevCount => prevCount + 1);
+        setCount1((prevCount) => prevCount + 1);
         i++;
       } else {
         clearInterval(interval);
@@ -31,7 +35,7 @@ function App() {
     let i = 0;
     const interval = setInterval(() => {
       if (i < 16) {
-        setCount2(prevCount => prevCount + 1);
+        setCount2((prevCount) => prevCount + 1);
         i++;
       } else {
         clearInterval(interval);
@@ -45,7 +49,7 @@ function App() {
     let i = 0;
     const interval = setInterval(() => {
       if (i < 300) {
-        setCount3(prevCount => prevCount + 2);
+        setCount3((prevCount) => prevCount + 2);
         i++;
       } else {
         clearInterval(interval);
@@ -255,16 +259,17 @@ function App() {
       <div class="marquee">
         <div class="marquee-content">
           Pionner | Inovação | Tecnologia | Eficiência | Curiosity | Discovery |
-          Challenger|Pionner | Inovação | Tecnologia | Eficiência | Curiosity | Discovery |
-          Challenger|
+          Challenger|Pionner | Inovação | Tecnologia | Eficiência | Curiosity |
+          Discovery | Challenger|
         </div>
       </div>
 
       <div className="hero">
-        
         <div className="hero_text">
           <p>/ Innova Business /</p>
-          <h1>Alavanque sua carreira com a inteligência<br></br>Artificial</h1>
+          <h1>
+            Alavanque sua carreira com a inteligência<br></br>Artificial
+          </h1>
         </div>
 
         <div className="brain">
@@ -273,18 +278,37 @@ function App() {
 
         <div className="text_brain">
           <h1>Negócios</h1>
-          <p>O advento da Inteligência Artificial (IA) está revolucionando diversas áreas da nossa vida, incluindo medicina, enfermagem, psicologia, advocacia e educação. Na Innova Academy, entendemos que a IA não só melhora a eficiência e inovação, mas também redefine os mercados de trabalho, exigindo novas competências específicas para cada campo profissional.</p>
-          <p>Na Innova, preparamos nossos alunos para esse mundo mais tecnológico, onde a adaptação é crucial. Manter nossos profissionais atualizados com as tecnologias emergentes não é apenas uma vantagem competitiva, mas uma necessidade. A educação tecnológica que oferecemos capacita profissionais a tornarem-se líderes inovadores, preparados para as oportunidades e desafios futuros.</p>
+          <p>
+            O advento da Inteligência Artificial (IA) está revolucionando
+            diversas áreas da nossa vida, incluindo medicina, enfermagem,
+            psicologia, advocacia e educação. Na Innova Academy, entendemos que
+            a IA não só melhora a eficiência e inovação, mas também redefine os
+            mercados de trabalho, exigindo novas competências específicas para
+            cada campo profissional.
+          </p>
+          <p>
+            Na Innova, preparamos nossos alunos para esse mundo mais
+            tecnológico, onde a adaptação é crucial. Manter nossos profissionais
+            atualizados com as tecnologias emergentes não é apenas uma vantagem
+            competitiva, mas uma necessidade. A educação tecnológica que
+            oferecemos capacita profissionais a tornarem-se líderes inovadores,
+            preparados para as oportunidades e desafios futuros.
+          </p>
         </div>
 
         <div className="hero_container">
           <div className="numbers">
             <h1>{count1}%</h1>
             <div className="numbers_title">
-              <h4>Funções <br></br>automatizadas</h4>
+              <h4>
+                Funções <br></br>automatizadas
+              </h4>
             </div>
           </div>
-          <p>Segundo o McKinsey Global Institute, até 2030, cerca 30% dos empregos globais poderão ser automatizados devido aos avanços em IA.</p>
+          <p>
+            Segundo o McKinsey Global Institute, até 2030, cerca 30% dos
+            empregos globais poderão ser automatizados devido aos avanços em IA.
+          </p>
         </div>
 
         <div className="hero_container">
@@ -294,7 +318,10 @@ function App() {
               <h4>Impacto no PIB global</h4>
             </div>
           </div>
-          <p>Segundo um relatório da PwC, a IA pode adicionar até $16 trilhões à economia global até 2030.</p>
+          <p>
+            Segundo um relatório da PwC, a IA pode adicionar até $16 trilhões à
+            economia global até 2030.
+          </p>
         </div>
 
         <div className="hero_container">
@@ -304,7 +331,29 @@ function App() {
               <h4>Alunos Formados</h4>
             </div>
           </div>
-          <p>Segundo o McKinsey Global Institute, até 2030, cerca 30% dos empregos globais poderão ser automatizados devido aos avanços em IA.</p>
+          <p>
+            Segundo o McKinsey Global Institute, até 2030, cerca 30% dos
+            empregos globais poderão ser automatizados devido aos avanços em IA.
+          </p>
+        </div>
+      </div>
+
+      <div className="container_professional">
+        <div className="professional">
+          <div className="unit_professional">
+            <img src={advogado} />
+
+            <img src={nuser} />
+
+            <img src={psycho} />
+
+            <img src={educatio} />
+
+            <img src={doctor} />
+            <img src={advogado} />
+
+            <img src={nuser} />
+          </div>
         </div>
       </div>
     </div>
